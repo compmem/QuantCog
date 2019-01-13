@@ -6,7 +6,7 @@ documentclass: scrartcl
 date: Version 2019-01-13
 header-includes:
     - \usepackage{array,hyperref}
-	- \usepackage[letterpaper, margin=1in]{geometry}
+    - \usepackage[letterpaper, margin=1in]{geometry}
     - \usepackage{libertine} 
     - \usepackage[libertine]{newtxmath}
 ---
@@ -27,7 +27,7 @@ Text:
 :    Assigned readings
 
 Course Web Page:
-:    Campuswire / Github
+:    Campuswire / [GitHub](github.com/compmem/QuantCog)
 
 Course assistants:
 :    None
@@ -41,8 +41,8 @@ Office:
 E-mail:
 :    pbs5u@virginia.edu
 
-Website:
-:    compmem.org
+Lab Website:
+:    [Computational Memory Lab](compmem.org)
 
 Office hours:
 :    TBA
@@ -61,7 +61,7 @@ Topics covered in the course will include: computer programming, probability the
 
 # Computing Requirements
 
-This is a computational class and all work will be performed on a computer and almost entirely with the Python programming language within Jupyter notebooks. You will need to bring a laptop running Windows, OSX, or Linux to every class. While there are some online tools that provide free hosting and execution for Jupyter notebooks (e.g., Google's Collaboratory), they do not currently support interactive widgets, which we will use for many of the lessons. Thus it will be required to run Jupyter notebooks directly on your computer. My strong recommendation is that you install and use the Anaconda Python distribution for your OS. We will spend time on the first day of class to ensure everyone has a functioning computer that will be able to run everything necessary for the course.
+This is a computational class and all work will be performed on a computer and almost entirely with the Python programming language within Jupyter notebooks. You will need to bring a laptop running Windows, OSX, or Linux to every class. While there are some online tools that provide free hosting and execution for Jupyter notebooks (e.g., Google's Collaboratory), they do not currently support interactive widgets, which we will use for many of the lessons. Thus it will be required to run [Jupyter](jupyter.org) notebooks directly on your computer. My strong recommendation is that you install and use the [Anaconda Python](https://www.anaconda.com/download/) distribution for your OS. We will spend time on the first day of class to ensure everyone has a functioning computer that will be able to run everything necessary for the course.
 
 
 # Assistance
