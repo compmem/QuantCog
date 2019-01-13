@@ -9,7 +9,7 @@ header-includes:
 	- \usepackage[letterpaper, margin=1in]{geometry}
     - \usepackage{libertine} 
     - \usepackage[libertine]{newtxmath}
-...
+---
 
 
 # Quick Reference
