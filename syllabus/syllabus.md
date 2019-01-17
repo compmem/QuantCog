@@ -94,6 +94,6 @@ There is no textbook for this course, however, there will often be relevant read
 
 # Evaluation
 
-This is a graduate-level course, which means that much of the burden of staying motivated to learn is transferred to the student. As such, there will not be any in-class exams. Your final grade will depend on class participation (60%), which will include taking part in interactive problem solving and at presenting on or leading a discussion of a relevant paper. There will also be a final project involving a mechanistic data analysis and associated write-up, worth the remaining 40%. 
+This is a graduate-level course, which means that much of the burden of staying motivated to learn is transferred to the student. As such, there will not be any in-class exams. Your final grade will depend on class participation (60%), which will include taking part in interactive problem solving and presenting on or leading a discussion of a relevant paper. There will also be a final project involving a mechanistic data analysis and associated write-up, worth the remaining 40%. 
 
 
