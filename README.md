@@ -25,3 +25,6 @@ The following are papers and other sources relevant for the class:
 - Gelman, Andrew (2006). Prior distributions for variance parameters in hierarchical models. *Bayesian Analysis*, 1(3), 515--533.
 [PDF](http://www.stat.columbia.edu/~gelman/research/published/taumain.pdf)
   - Long story short, use half Cauchy priors for variance parameters.
+
+- https://gist.github.com/conormm/fd8b1980c28dd21cfaf6975c86c74d07
+  - Useful gist for data-wrangling tips
