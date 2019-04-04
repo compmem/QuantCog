@@ -28,3 +28,8 @@ The following are papers and other sources relevant for the class:
 
 - https://gist.github.com/conormm/fd8b1980c28dd21cfaf6975c86c74d07
   - Useful gist for data-wrangling tips
+
+
+- Navarro, D. J., & Fuss, I. G. (2009). Fast and accurate calculations for first-passage times in Wiener diffusion models. *Journal of Mathematical Psychology*, 53(4), 222-230.
+[PDF](https://compcogscisydney.org/publications/NavarroFuss2009.pdf)
+  - Paper illustrating the fast and accurate estimation of WFPT models.
