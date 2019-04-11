@@ -1,8 +1,8 @@
 
 
 import numpy as np
+import scipy.stats.distributions as dists
 
-from RunDEMC import dists
 
 def wfpt_like(choices, rts, v_mean, a, w_mode, w_std=0.0,
               v_std=0.0, t0=0.0, nsamp=5000, err=.0001):
@@ -10,42 +10,59 @@ def wfpt_like(choices, rts, v_mean, a, w_mode, w_std=0.0,
     Calculate WFPT likelihoods for choices and rts
 
 
-
     """
     # fill likes
     likes = np.zeros(len(choices))
+
+    # process the v_mean and w_mode
+    if w_std > 0.0:
+        # calc with beta distribution
+        mu = w_mode
+        sigma = w_std
+        kappa = mu * (1 - mu) / sigma**2 - 1
+        alpha = mu * kappa
+        beta = (1 - mu) * kappa
+
+        if alpha <= 0.0 or beta <= 0.0:
+            # illegal param
+            return likes
+        
+        # sample from the beta distribution
+        w = dists.beta(alpha, beta).rvs(nsamp)
+    else:
+        w = w_mode
+    
+    # proc the v
+    if v_std > 0.0:
+        v = dists.norm(v_mean, v_std).rvs(nsamp)[np.newaxis]
+    else:
+        v = v_mean
     
     # loop over the two choices
     # first choice 1, no change in v or w
     ind = np.where(choices == 1)[0]
-    v = v_mean
-    w = w_mode
 
     # loop over rts, setting likes for that choice
     for i in ind:
         # calc the like, adjusting rt with t0
-        likes[i] = wfpt(rts[i]-t0, v_mean=v, v_std=v_std,
-                        a=a, w_mode=w, w_std=w_std,
+        likes[i] = wfpt(rts[i]-t0, v=v, a=a, w=w,
                         nsamp=nsamp, err=err)
-                        
 
     # then choice 2 with flip of v and w
-    v = -v_mean
-    w = 1-w_mode
+    v = -v
+    w = 1-w
     ind = np.where(choices == 2)[0]
     
     # loop over rts, setting likes for that choice
     for i in ind:
         # calc the like, adjusting rt with t0
-        likes[i] = wfpt(rts[i]-t0, v_mean=v, v_std=v_std,
-                        a=a, w_mode=w, w_std=w_std,
+        likes[i] = wfpt(rts[i]-t0, v=v, a=a, w=w,
                         nsamp=nsamp, err=err)
     
     return likes
 
 
-def wfpt(t, v_mean, a, w_mode, w_std=0.0,
-         v_std=0.0, nsamp=5000, err=.0001):
+def wfpt(t, v, a, w, nsamp=5000, err=.0001):
     """
     Wiener First Passage of Time
 
@@ -72,25 +89,9 @@ def wfpt(t, v_mean, a, w_mode, w_std=0.0,
     if t <= 0.0:
         return 0.0
 
-    if w_std > 0.0:
-        # calc with beta distribution
-        mu = w_mode
-        sigma = w_std
-        kappa = mu * (1 - mu) / sigma**2 - 1
-        alpha = mu * kappa
-        beta = (1 - mu) * kappa
-
-        if alpha <= 0.0 or beta <= 0.0:
-            # illegal param
-            return 0.0
-        
-        # sample from the beta distribution
-        w = dists.beta(alpha, beta).rvs(nsamp)
-    else:
-        w = w_mode
-
-    # make w 2d
+    # make w and v 2d
     w = np.atleast_2d(w)
+    v = np.atleast_2d(v)
 
     # tt=t/(a^2)
     tt = t/(a**2)
@@ -149,12 +150,6 @@ def wfpt(t, v_mean, a, w_mode, w_std=0.0,
         p *= np.pi
         # }
 
-    # proc the v
-    if v_std > 0:
-        v = dists.normal(v_mean, v_std).rvs(nsamp)[np.newaxis]
-    else:
-        v = v_mean
-
     # out=p*exp(-v*a*w -(v^2)*t/2)/(a^2)
     out = p * np.exp(-v * a * w - (v**2) * t / 2) / (a**2)
 
@@ -164,6 +159,7 @@ def wfpt(t, v_mean, a, w_mode, w_std=0.0,
 def wfpt_gen(v_mean, a, w_mode, w_std=0.0,
              v_std=0.0, wfpt_nsamp=5000,
              err=.0001, nsamp=1000, trange=None):
+    # generate default range if not provided
     if trange is None:
         trange = np.linspace(0, 5.0, 1000)
 
@@ -173,19 +169,12 @@ def wfpt_gen(v_mean, a, w_mode, w_std=0.0,
     ntimes = len(trange)
     choices = np.array([1]*ntimes + [2]*ntimes + [0])
 
-    # do cdf for one choice over entire range
-    cdf1 = (np.array([wfpt(t, v_mean, a, w_mode, w_std=w_std,
-                           v_std=v_std, nsamp=wfpt_nsamp)
-                      for t in trange])*dx).cumsum()
+    likes = wfpt_like(choices[:-1], rts[:-1],
+                      v_mean, a, w_mode, w_std=w_std,
+                      v_std=v_std, t0=0.0, nsamp=nsamp, err=err)
 
-    # do cdf of other choice over entire range
-    cdf2 = (np.array([wfpt(t, -v_mean, a, 1-w_mode, w_std=w_std,
-                           v_std=v_std, nsamp=wfpt_nsamp)
-                      for t in trange])*dx).cumsum()+cdf1.max()
-
-    # stack them
-    cdfs = np.concatenate([cdf1, cdf2, [1.0]])
-
+    cdfs = np.concatenate([(likes*dx).cumsum(), [1.0]])
+    
     # draw uniform rand numbers to determine choices and rts
     inds = [(cdfs > np.random.rand()).argmax() for i in range(nsamp)]
 
