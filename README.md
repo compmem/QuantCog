@@ -33,3 +33,14 @@ The following are papers and other sources relevant for the class:
 - Navarro, D. J., & Fuss, I. G. (2009). Fast and accurate calculations for first-passage times in Wiener diffusion models. *Journal of Mathematical Psychology*, 53(4), 222-230.
 [PDF](https://compcogscisydney.org/publications/NavarroFuss2009.pdf)
   - Paper illustrating the fast and accurate estimation of WFPT models.
+
+
+- McClelland, J. L., (2009). The place of modeling in cognitive science. *Topics in Cognitive Science*, 1, 11-38.
+
+- Heathcote A, Brown SD, & Wagenmakers E-J, "An Introduction to Good Practices in Cognitive Modeling", *An Introduction to Model-Based Cognitive Neuroscience*, Springer, E-J Wagenmakers (ed), 1-14.
+
+- Wagenmakers, E.-J. (2009). Methodological and empirical developments for the
+Ratcliff diffusion model of response times and accuracy. *European Journal of Cognitive Psychology*, 21, 641-671.
+
+- Brown, S.D., & Heathcote, A. J. (2008). The simplest complete model of choice
+response time: Linear ballistic accumulation. *Cognitive Psychology*, 57, 153-178.
