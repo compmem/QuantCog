@@ -1,9 +1,9 @@
 ---
 title: 'Introduction to Quantified Cognition'
-subtitle: 'Psychology 5559-2 --- Spring 2019'
+subtitle: 'Psychology 5332 --- Spring 2020'
 author: Per B. Sederberg, PhD
 documentclass: scrartcl
-date: Version 2019-01-13
+date: Version 2020-01-15
 header-includes:
     - \usepackage{array,hyperref}
     - \usepackage[letterpaper, margin=1in]{geometry}
@@ -15,13 +15,13 @@ header-includes:
 # Quick Reference
 
 Credit:
-:    3 units ; Class # 19546
+:    3 units ; Class # 19450
 
 Time:
-:    Thursday, 14:00 -- 16:30
+:    Thursday, 15:30 -- 18:00
 
 Place:
-:    Gilmer Hall, Rm. 240
+:    Ruffner Hall, Rm. 173
 
 Text:
 :    Assigned readings
@@ -48,7 +48,7 @@ Office hours:
 :    TBA
 
 Final:
-:    None
+:    Project-based
 
 
 
@@ -61,7 +61,7 @@ Topics covered in the course will include: computer programming, probability the
 
 # Computing Requirements
 
-This is a computational class and all work will be performed on a computer and almost entirely with the Python programming language within Jupyter notebooks. You will need to bring a laptop running Windows, OSX, or Linux to every class. While there are some online tools that provide free hosting and execution for Jupyter notebooks (e.g., Google's Collaboratory), they do not currently support interactive widgets, which we will use for many of the lessons. Thus it will be required to run [Jupyter](https://jupyter.org) notebooks directly on your computer. My strong recommendation is that you install and use the [Anaconda Python](https://www.anaconda.com/download/) distribution for your OS. We will spend time on the first day of class to ensure everyone has a functioning computer that will be able to run everything necessary for the course.
+This is a computational class and all work will be performed on a computer and almost entirely with the Python programming language within Jupyter notebooks. You will need to bring a laptop running Windows, OSX, or Linux to every class. There are some online tools that provide free hosting and execution for Jupyter notebooks (e.g., [Google Collaboratory](https://colab.research.google.com/)). These hosting services limit the computational resources, so you may want to run [Jupyter](https://jupyter.org) notebooks directly on your computer. This will also allow you to incorporate these approaches into your own research more easily. Thus, my recommendation is that you install and use the [Anaconda Python](https://www.anaconda.com/download/) distribution for your OS. We will spend time on the first day of class to ensure everyone has a functioning computer that will be able to run everything necessary for the course either via Google Collaboratory or locally.
 
 
 # Assistance
@@ -74,11 +74,11 @@ I am eager for you to get as much as possible from this course, so please feel f
 The following is the general order of the topics covered in the course. Please note that sometimes we may cover multiple topics in a single lecture, or spend more than one lecture on a single topic, and this list is subject to modification at any time. That said, all major changes will also include an update to the syllabus, so it will remain a point of reference.
 
 0. Overview
-1. Principles of Open Science
+1. Programming and Principles of Open Science
 2. Probability
-3. First behavioral data analysis
-4. Parameter estimation
-5. Bayesian analysis of behavioral data
+3. Data as a Random Variable
+4. Quantifying Uncertainty
+5. Bayesian data analysis
 6. Cognitive process models
 7. Interactive model exploration
 8. Bayesian fits of process models
