@@ -45,7 +45,7 @@ Lab Website:
 :    [Computational Memory Lab](https://compmem.org)
 
 Office hours:
-:    TBA
+:    Tuesday and Thursday, 2--2:30pm
 
 Final:
 :    Project-based
