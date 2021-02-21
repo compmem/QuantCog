@@ -3,7 +3,7 @@ title: 'Introduction to Quantified Cognition'
 subtitle: 'Psychology 5332 --- Spring 2021'
 author: Per B. Sederberg, PhD
 documentclass: scrartcl
-date: Version 2021-02-02
+date: Version 2021-02-21
 header-includes:
     - \usepackage{array,hyperref}
     - \usepackage[letterpaper, margin=1in]{geometry}
@@ -45,7 +45,7 @@ Lab Website:
 :    [Computational Memory Lab](https://compmem.org)
 
 Office hours:
-:    TBD
+:    Tuesdays and Wednesdays, 14:00 -- 14:30
 
 Final:
 :    Project-based
