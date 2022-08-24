@@ -1,9 +1,9 @@
 ---
 title: 'Introduction to Quantified Cognition'
-subtitle: 'Psychology 5332 --- Spring 2021'
+subtitle: 'Psychology 5332 --- Fall 2022'
 author: Per B. Sederberg, PhD
 documentclass: scrartcl
-date: Version 2021-02-02
+date: Version 2022-08-24
 header-includes:
     - \usepackage{array,hyperref}
     - \usepackage[letterpaper, margin=1in]{geometry}
@@ -21,7 +21,7 @@ Time:
 :    Thursday, 14:00 -- 16:30
 
 Place:
-:    Online
+:    Gilmer 245
 
 Text:
 :    Assigned readings
@@ -30,13 +30,13 @@ Course Web Page:
 :    Slack / [GitHub](https://github.com/compmem/QuantCog)
 
 Course assistants:
-:    None
+:    Adam Fenton (af5fn@virginia.edu)
 
 Instructor:
 :    Dr. Per Sederberg
 
 Office:
-:    Online
+:    Gilmer 412
 
 E-mail:
 :    pbs5u@virginia.edu
@@ -67,21 +67,9 @@ There are some online tools that provide free hosting and execution for Jupyter 
 We will spend time on the first day of class to ensure everyone has a functioning computer that will be able to run everything necessary for the course either via Google Collaboratory or locally.
 
 
-# Online Course Expectations
-
-This course will be taking place entirely online with "synchronous" classes on Zoom. As much as possible, I hope we can make this feel like we are all in this together, meeting in the same room. As such, these are the primary guidelines and expectations for our Zoom meetings:
-
-- You should keep your video on unless a transient issue arises (e.g., there is something seriously distracting going on in the room.) 
-- You can, however, keep your microphone muted when not talking.
-- Feel free to ask questions anytime! It's often hard for me to see everyone, so interjecting by voice is perfectly fine (i.e., you don't need to use the hand-raising feature in the Zoom chat.)
-- We will be recording the lessons, which will be made available *only* to those in the class via UVACollab. 
-
-If you have any concerns about any of these policies, please set up a meeting with me and I will do my best to accommodate your needs.
-
-
 # Assistance
 
-I am eager for you to get as much as possible from this course, so please feel free to come to me with any questions you have. That said, science is a team effort and in order to reduce duplication of questions and discussions, we will be using Slack for all class communication and discussions. Please do not email me unless there is an issue with Slack. If you'd prefer to have a one-on-one discussion it is possible to send direct messages in Slack. We will spend some time on the first day ensuring everyone is set up to use Slack. I will also have weekly office hours to which you are always welcome to come and have in-person discussions.
+I am eager for you to get as much as possible from this course, so please feel free to come to me with any questions you have. That said, science is a team effort and in order to reduce duplication of questions and discussions, we will be using Discord for all class communication and discussions. Please do not email me unless there is an issue with Discord. If you'd prefer to have a one-on-one discussion it is possible to send direct messages in Discord. We will spend some time on the first day ensuring everyone is set up to use Discord. I will also have weekly office hours to which you are always welcome to come and have in-person discussions.
 
 
 # Schedule
