@@ -27,7 +27,7 @@ Text:
 :    Assigned readings
 
 Course Web Page:
-:    Slack / [GitHub](https://github.com/compmem/QuantCog)
+:    Discord / [GitHub](https://github.com/compmem/QuantCog)
 
 Course assistants:
 :    Adam Fenton (af5fn@virginia.edu)
@@ -101,11 +101,11 @@ There is no textbook for this course, however, there will often be relevant read
 
 This is a graduate-level course, which means that much of the burden of staying motivated to learn is transferred to the student. As such, there will not be any in-class exams. Students will be evaluated on the basis of:
 
-- Lesson exercises / class participation (20 pts)
-- Two mini-projects (20 pts + 20 pts)
+- Lesson exercises / class participation (30 pts)
+- Mini projects (30 pts)
 - Final project (40 pts)
 
 for a total of 100 points. 
 
-
+The course will be graded using the standard grading scale with your percentage of points earned out of the total possible points rounding to the nearest whole percentage point.
 
