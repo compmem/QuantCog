@@ -31,3 +31,20 @@ The following are papers and other sources relevant for the class:
 response time: Linear ballistic accumulation. *Cognitive Psychology*, 57, 153-178.
 [PDF](http://www.tascl.org/uploads/4/9/3/3/49339445/38_.pdf)
   - The first presentation of the LBA model.
+  
+
+- Navarro, D. J., & Fuss, I. G. (2009). Fast and accurate calculations for first-passage times in Wiener diffusion models. *Journal of Mathematical Psychology*, 53(4), 222-230.
+[PDF](https://compcogscisydney.org/publications/NavarroFuss2009.pdf)
+  - Paper illustrating fast and accurate estimation of WFPT models.
+
+- Hawkins, G., & Heathcote, A. (2021). Racing against the clock:
+  Evidence-based vs. time-based decisions. *Psychological Review*.
+  [PDF](http://www.tascl.org/uploads/4/9/3/3/49339445/hawkins__in_press__racing_against_the_clock.pdf)
+  - Independent accumulator model with a timer.
+
+- McClelland, J. L., (2009). The place of modeling in cognitive science. *Topics in Cognitive Science*, 1, 11-38.
+[HTML](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1756-8765.2008.01003.x)
+
+- Heathcote A, Brown SD, & Wagenmakers E-J, "An Introduction to Good Practices in Cognitive Modeling", in *An Introduction to Model-Based Cognitive Neuroscience*, Springer, E-J Wagenmakers (ed), 1-14.  [PDF](http://www.ejwagenmakers.com/inpress/HeathcoteModelingIntro.pdf)
+  - An excellent introduction providing some rules to follow when
+    developing and presenting cognitive models.
